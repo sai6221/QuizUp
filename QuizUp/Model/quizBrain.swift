@@ -45,7 +45,12 @@ struct quizBrain{
         }
         else{
             self.questionNumber = 0
+            self.score = 0
         }
+    }
+    
+    func get_score() -> String{
+        return String(score)
     }
     
 }

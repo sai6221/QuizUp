@@ -24,10 +24,16 @@
                                 <color key="tintColor" systemColor="systemPurpleColor"/>
                             </progressView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="Yak-pV-JAF">
-                                <rect key="frame" x="0.0" y="44" width="390" height="560"/>
+                                <rect key="frame" x="0.0" y="44" width="390" height="625"/>
                                 <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Score Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KoG-Tl-gfd">
+                                        <rect key="frame" x="115.00000000000001" y="0.0" width="160.33333333333337" height="35"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="30"/>
+                                        <color key="textColor" systemColor="opaqueSeparatorColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Question" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="20" translatesAutoresizingMaskIntoConstraints="NO" id="11g-mr-sId">
-                                        <rect key="frame" x="5" y="0.0" width="380" height="400"/>
+                                        <rect key="frame" x="5" y="65" width="380" height="400"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="380" id="Xsd-sI-NfQ"/>
                                             <constraint firstAttribute="height" constant="400" id="oFn-fg-lMW"/>
@@ -37,7 +43,7 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="epW-aP-VZI">
-                                        <rect key="frame" x="0.0" y="430" width="390" height="50"/>
+                                        <rect key="frame" x="0.0" y="495" width="390" height="50"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="50" id="24S-92-Dvo"/>
                                         </constraints>
@@ -50,7 +56,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="R2E-1Y-iMi">
-                                        <rect key="frame" x="0.0" y="510" width="390" height="50"/>
+                                        <rect key="frame" x="0.0" y="575" width="390" height="50"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="50" id="3yt-ut-GCP"/>
                                         </constraints>
@@ -88,6 +94,7 @@
                     </view>
                     <connections>
                         <outlet property="QuestionLabel" destination="11g-mr-sId" id="Awj-Jo-vMp"/>
+                        <outlet property="ScoreLabel" destination="KoG-Tl-gfd" id="XOl-5g-ndB"/>
                         <outlet property="falseButton" destination="R2E-1Y-iMi" id="5NX-Ya-sBA"/>
                         <outlet property="progressBar" destination="ME2-zk-Ksd" id="ehO-w7-BMC"/>
                         <outlet property="trueButton" destination="epW-aP-VZI" id="Ae9-XU-VUo"/>
